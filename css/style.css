@@ -210,7 +210,10 @@ ul li{
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     font-weight: 700;
-    
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 111, 173));
+    display: inline-block;
+    -webkit-background-clip:text;
+    color: transparent;
 }
 
 .categories__img--1{
@@ -359,6 +362,10 @@ ul li{
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     font-weight: 700;
+    background-image: linear-gradient(to right, rgb(51, 51, 255), rgb(230, 213, 213));
+    display: inline-block;
+    -webkit-background-clip:text;
+    color: transparent;
     
 }
 
@@ -496,7 +503,7 @@ ul li{
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     font-weight: 700;
-    
+   
 }
 
 .USP--h3{
@@ -575,6 +582,11 @@ ul li{
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     font-weight: 700;
+    background-image: linear-gradient(to right, #F20056, rgba(16, 27, 16, 0.527));
+    display: inline-block;
+    -webkit-background-clip:text;
+    color: transparent;
+    
     
 }
 
