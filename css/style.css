@@ -1,0 +1,495 @@
+/* Color Combination
+STYLE: Fun, Bright, Colourful
+Red - #FF3333
+Green -  #266A2E
+Blue - lightskyblue - #87CEFA
+
+TYPOGRAPHY
+REFERENCE SITES
+
+UNIQUE SELLING POINTS
+
+PROVISIONAL SITEMAP
+
+PAGES
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Indie Flower', cursive;
+}
+.header{
+    height:100vh;
+    font-family: 'Indie Flower', cursive;
+}
+.header-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header__banner{
+    padding: 0;
+    margin:0;
+    height: 40px;
+    background-color: rgba(135, 206, 250, 0.432);
+    color: #5C0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+.banner-text{
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+}
+
+.banner__icon{
+    margin: 10px;
+}
+
+.navbar{
+    height: 15vh;
+    background-color: rgba(241, 139, 139, 0.589);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-weight: 700;
+    
+    
+}
+
+.navbar__logo-box{
+    margin:10px;
+    
+}
+
+.navbar-text{
+    
+    font-family: 'Indie Flower', cursive;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size:40px;
+}
+
+ul{
+    margin: 20px;
+}
+ul li{
+    text-transform: uppercase;
+    list-style-type:none;
+    float:left;
+    padding:10px 20px;
+    font-size: 20px;
+}
+.btn--nav:hover{
+    font-size: 25px;
+    background-color: rgba(135, 206, 250, 0.952);
+    padding: 10px 12px;
+    border-radius: 30px;
+}
+.btn--nav:link, .btn--nav:visited {
+    text-decoration: none;
+    cursor: pointer
+    
+}
+
+.slideshow{
+    background-image: url(../images/heading2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+}
+
+.heading-primary{
+    background-color: rgba(255, 255, 255, 0.712);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    color: rgb(17, 13, 13);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 40px;
+    border-radius: 2rem;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
+    
+}
+
+.heading-primary--main{
+   display: block;
+   font-size:40px;
+   text-align: center;
+   font-family: 'Indie Flower', cursive;
+   animation-name: moveFromTop;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+}
+
+.heading-primary--sub{
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.slider{
+    height: 90vh;
+    background-color: blue;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+
+@keyframes moveFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*CATEGORIES*/
+.categories{
+    border-radius: 30px;
+    background-color: pink;
+    margin: 20px;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.categories-cards{
+   
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+}
+
+.categories-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.categories__img--1{
+    margin: -90px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+
+}
+
+.categories__img--1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+.categories__img--2{
+    margin: -90px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+
+}
+
+.categories__img--2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.categories__img--3{
+    margin: -90px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+
+}
+
+.categories__img--3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+/*FEATURED DEALS AND NEW ARRIVALS*/
+.featured{
+    border-radius: 30px;
+    margin: 20px;
+    background-color: lightcyan;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.featured-cards{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.featured-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+
+.featured__img--1{
+    margin: -30px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.featured__img--1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+.featured__img--2{
+    margin: -30px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.featured__img--2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.featured__img--3{
+    margin: -30px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.featured__img--3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.featured__img--4{
+    margin: -30px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.featured__img--4:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/*COLLECTION 1*/
+.collection1{
+    border-radius: 30px;
+    margin: 20px;
+    background-color: #F20056;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+
+.collection1-grid{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.collection1-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.collection__img--1{
+    margin: -30px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.collection__img--1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+
+.description-text{
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    
+}
+
+.btn--collection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: 30px;
+    border: solid rgba(0, 0, 0, 0.651);
+    border-radius: 100px;
+    color: white;
+    width: 100px;
+    text-decoration: none;
+}
+
+
+/*USP*/
+
+.USP{
+    border-radius: 30px;
+    margin: 20px;
+    background-color: lightgreen;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.USP-cards{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.USP-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+
+.USP__img--1{
+    margin: -10px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.USP__img--1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+.USP__img--2{
+    margin: -10px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.USP__img--2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.USP__img--3{
+    margin: -10px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.USP__img--3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.USP__img--4{
+    margin: -10px 30px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.USP__img--4:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/*SOCIAL MEDIA INSTAGRAM*/
+.instagram{
+    border-radius: 30px;
+
+    margin: 20px;
+   
+    background-color: lightskyblue;
+    height: 30vh;
+}
+
+.instagram-text{
+    margin:0;
+}
+/*FOOTER*/
+.section-footer{
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer__heading--text{
+    font-size: 10px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
