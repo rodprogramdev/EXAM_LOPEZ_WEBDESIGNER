@@ -395,7 +395,10 @@ ul li{
 .USP{
     border-radius: 30px;
     margin: 20px;
-    background-color: lightgreen;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.377),rgba(173, 216, 230, 0.521))
+    ,url(../images/upsBackground.jpg);
+    background-position: center;
     height: 70vh;
     display:flex;
     flex-direction: column;
