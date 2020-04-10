@@ -100,12 +100,14 @@ body{
 /*max-width 9920px*/
 @media only screen and (max-width: 992px) {
     .navbar-text {
-        margin: 10px;
-        font-size: 16px;
+        margin: 20px;
+        font-size: 14px;
         font-family: 'Indie Flower', cursive;
         font-weight: 700;
     }
   }
+
+
 
 ul{
     margin: 20px;
@@ -122,11 +124,11 @@ ul li{
 @media only screen and (max-width: 992px) {
     ul{
         margin: 20px;
-        display: none;
     }
     ul li {
-        margin: 2px;
-        font-size: 10px;
+        margin: 5px 10px;
+        font-size: 15px;
+        padding: 3px 5px;
         font-family: 'Indie Flower', cursive;
         font-weight: 700;
     }
@@ -170,6 +172,26 @@ ul li{
     
 }
 
+/*max-width 9920px*/
+@media only screen and (max-width: 992px) {
+    .heading-primary{
+        background-color: rgba(255, 255, 255, 0.712);
+        top: 50%;
+        left:50%;
+        position: absolute;
+        color: rgb(17, 13, 13);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 20px;
+        border-radius: 2rem;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    
+        
+    }
+}
+
 .heading-primary--main{
    display: block;
    font-size:40px;
@@ -180,6 +202,19 @@ ul li{
    animation-timing-function: ease-out;
 }
 
+/*max-width 9920px*/
+@media only screen and (max-width: 992px) {
+    .heading-primary--main{
+        display: block;
+        font-size:20px;
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+        animation-name: moveFromTop;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+     }
+}
+
 .heading-primary--sub{
     display: block;
     font-family: 'Indie Flower', cursive;
@@ -187,6 +222,18 @@ ul li{
     animation-name: moveFromBottom;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+}
+@media only screen and (max-width: 992px) {
+    .heading-primary--sub{
+        display: block;
+        font-size:20px;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        animation-name: moveFromBottom;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+
 }
 .slider{
     height: 90vh;
